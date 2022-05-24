@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+#dot{
+    background-color: red;
+    border-radius: 9px;
+    height: 18px;
+    width: 18px;
+    margin-top: 25px;
+    margin-right: 8px;
+}
+section{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-bottom: 10%;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.div_live{
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: center;
+}
+.main_content{
+    margin: 0 5%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    row-gap: 18px;
+    column-gap: 18px;
+    justify-items: center;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card1{
+    background-color: #3d5fad;
+    width: 100%;
+    padding: 30px 0 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card2{
+    background-color: #29923e;
+    width: 100%;
+    padding: 30px 0 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.card3{
+    background-color: #9b8d24;
+    width: 100%;
+    padding: 30px 0 50px;
 }
+.card4{
+    background-color: rgb(241, 59, 59);
+    width: 100%;
+    padding: 30px 0 50px;
+}
+.card5{
+    background-color: #af5117;
+    width: 100%;
+    padding: 30px 0 50px;
+}
+.card6{
+    background-color: #a19253;
+    width: 100%;
+    padding: 20px 0 15px;
+}
+@media (min-width: 450px) and (max-width: 768px ){
+    .content{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 30% 30% 30%;
+    }
+    h1{
+        font-size: 34px;
+    }
+    h2{
+        font-size: 32px;
+    }
+}
+@media (min-width: 280px) and (max-width: 450px ){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 16px;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
